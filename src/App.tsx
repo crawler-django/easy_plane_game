@@ -102,35 +102,35 @@ function App() {
   // 主角飞机
   const plane = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = '../assets/plane.png'
+    imgObj.src = './assets/plane.png'
     return imgObj
   }, [])
 
   // 背景图
   const background = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = '../assets/background.png'
+    imgObj.src = './assets/background.png'
     return imgObj
   }, [])
 
   // 敌机1
   const enemy1 = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = '../assets/enemy.png'
+    imgObj.src = './assets/enemy.png'
     return imgObj
   }, [])
 
   // 子弹
   const bullet = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = '../assets/bullet.png'
+    imgObj.src = './assets/bullet.png'
     return imgObj
   }, [])
 
   // 爆炸
   const boom = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = '../assets/boom.png'
+    imgObj.src = './assets/boom.png'
     return imgObj
   }, [])
 
