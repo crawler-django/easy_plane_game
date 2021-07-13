@@ -1,4 +1,9 @@
 import React, { useEffect, useMemo, useRef } from 'react'
+import planeUrl from './assets/plane.png'
+import enemyUrl from './assets/enemy.png'
+import backgroundUrl from './assets/background.png'
+import boomUrl from './assets/boom.png'
+import bulletUrl from './assets/bullet.png'
 import './App.css'
 
 // canvas宽高
@@ -102,35 +107,35 @@ function App() {
   // 主角飞机
   const plane = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = './assets/plane.png'
+    imgObj.src = planeUrl
     return imgObj
   }, [])
 
   // 背景图
   const background = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = './assets/background.png'
+    imgObj.src = backgroundUrl
     return imgObj
   }, [])
 
   // 敌机1
   const enemy1 = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = './assets/enemy.png'
+    imgObj.src = enemyUrl
     return imgObj
   }, [])
 
   // 子弹
   const bullet = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = './assets/bullet.png'
+    imgObj.src = bulletUrl
     return imgObj
   }, [])
 
   // 爆炸
   const boom = useMemo(() => {
     const imgObj = new Image()
-    imgObj.src = './assets/boom.png'
+    imgObj.src = boomUrl
     return imgObj
   }, [])
 
